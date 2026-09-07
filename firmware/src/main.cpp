@@ -42,7 +42,7 @@ void setup() {
   // Initialize I2C
   Serial.println("[INIT] Configuring I2C (SDA: GPIO21, SCL: GPIO22)");
   Wire.begin(INA219_SDA, INA219_SCL);
-  Wire.setClock(400000);  // 400kHz I2C clock
+  Wire.setClock(100000);  // 100kHz I2C clock
   delay(500);
   
   // Initialize INA219
